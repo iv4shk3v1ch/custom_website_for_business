@@ -1,11 +1,14 @@
 <?php
 // Connect styles and scripts
+
+
 function business_theme_scripts() {
     wp_enqueue_style('main-style', get_stylesheet_uri()); // Connects style.css
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), false, true);
 }
 add_action('wp_enqueue_scripts', 'business_theme_scripts');
+
 
 // Connect header, logo and menu
 function business_theme_setup() {
@@ -55,11 +58,12 @@ function enqueue_custom_styles() {
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 
 
-function business_theme_styles() {
-    wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
-    wp_enqueue_style('main-style', get_stylesheet_uri());
-    wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array('jquery'), false, true);
+function enqueue_bootstrap() {
+    wp_enqueue_style('bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+    wp_enqueue_script('jquery'); // Ensure jQuery is loaded
+    wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js', array('jquery'), null, true);
 }
-add_action('wp_enqueue_scripts', 'business_theme_styles');
+add_action('wp_enqueue_scripts', 'enqueue_bootstrap');
+
 
 ?>

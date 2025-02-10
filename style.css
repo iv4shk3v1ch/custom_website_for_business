@@ -102,3 +102,33 @@ header {
     }
 }
 
+/* Pagination Style */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Ensures it's centered inside the container */
+    padding: 10px 0;
+}
+
+/* Pagination Link Style */
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .current {
+    background-color: #007bff;
+    color: #fff;
+}
+
