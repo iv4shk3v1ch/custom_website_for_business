@@ -12,22 +12,22 @@
     <div class="carousel-item active">
         <img src="<?= get_template_directory_uri().'/assets/images/slider1.jpg' ?>" class="d-block w-100" alt="Safari">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Я Люблю сафари</h5>
-            <p>В сафари реально ахуенно, ну реально правда ахуенно</p>
+            <h5>New collection!</h5>
+            <p>Fresh arrival from Italy and it's full of style!</p>
         </div>
     </div>
     <div class="carousel-item">
         <img src="<?= get_template_directory_uri().'/assets/images/slider2.jpg' ?>" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Я ебал карусель эту</h5>
-            <p>очко горит</p>
+            <h5>-50% OFF</h5>
+            <p>Use promo (NEW2025) to save money on your first order!</p>
         </div>
     </div>
     <div class="carousel-item">
         <img src="<?= get_template_directory_uri().'/assets/images/slider3.jpg' ?>" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Я ебал карусель эту</h5>
-            <p>а вы любите маму?</p>
+            <h5>Our worldwide delivery</h5>
+            <p>You should know that we're working with delivery all around the world. Cost of the postage will be calculated on the checkout page!</p>
         </div>
     </div>
   </div>

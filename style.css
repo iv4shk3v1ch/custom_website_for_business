@@ -20,6 +20,7 @@ header {
     padding: 15px;
 }
 
+
 /* ============================= */
 /* 2. NAVIGATION MENU            */
 /* ============================= */
@@ -102,7 +103,9 @@ header {
     }
 }
 
-/* Pagination Style */
+/* ============================= */
+/* 6. PAGINATION STYLE       */
+/* ============================= */
 .pagination {
     display: flex;
     justify-content: center;
@@ -132,3 +135,60 @@ header {
     color: #fff;
 }
 
+
+/* ============================= */
+/* 7. 404 Page style       */
+/* ============================= */
+.container.text-center {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1.display-4 {
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Improved 404 Page Search Bar */
+.search-form {
+    max-width: 500px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-button i {
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
